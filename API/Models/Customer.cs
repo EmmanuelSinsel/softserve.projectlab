@@ -12,5 +12,17 @@ public class Customer
     
     public LineOfCredit? LineOfCredit { get; set; }
     
-    // TODO: we need another type of customer and use this one as base, use inheritance 
+}
+
+public class VIPCustomer : Customer
+{
+
+    public string Address { get; set; }
+
+    public string RFC { get; set; }
+
+    public string Phone { get; set; }
+
+    public LineOfCredit? AdditionalLineOfCredit { get; set; } // Because we offer to our VIP customers an extra credit line as a benefit for its loyalty!
+
 }
